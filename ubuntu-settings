@@ -1,3 +1,4 @@
+
 Disable IPV6
 According to https://issues.apache.org/jira/browse/HADOOP-11890, IPV6 needs to be disabled.
 To disable IPV6, append the following lines to /etc/sysctl.conf
@@ -7,3 +8,5 @@ net.ipv6.conf.all.disable_ipv6 = 1
 net.ipv6.conf.default.disable_ipv6 = 1
 net.ipv6.conf.lo.disable_ipv6=1
 # end of disable ipv6
+
+Need to make this changes on all nodes in a cluster
